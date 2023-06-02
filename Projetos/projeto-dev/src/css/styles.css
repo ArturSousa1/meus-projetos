@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: url('../imagens/05392e9b8f1c2a28b3cd2f1101110da6.png');
+}
+
+body.modo-escuro {
+    background-image: url('../imagens/dark.jpg');
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+
+
+header .imagem-botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.logo {
+    height: 40px;
+    transition: 0.2s ease-in-out;
+    width: 60px;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-animes:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
+main {
+    padding: 25px;
+}
+
+.listagem-animes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cartao-animes {
+    background-color: #808080;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.cartao-animes:hover {
+    background-color: #B0C4DE;
+    border: 4px solid;
+
+}
+
+.modo escuro .cartao-animes {
+    background-color: #a8a8a8;
+}
+
+main .cartao-animes .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-animes .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: center;
+}
+
+main .cartao-animes .gif {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+}
+
+main .cartao-animes .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-animes .tipo {
+    padding: 8px;
+}
+
+.forca {
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.habilidades {
+    background-color: #ee8130;
+    border-radius: 10px;
+}
+
+.caracteristica {
+    background-color: red;
+    border-radius: 10px;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+    text-align: center;
+}
